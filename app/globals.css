@@ -44,6 +44,18 @@ body {
 }
 
 .background-video video {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%; /* Set video width to 100% of its container */
+  height: auto; /* Let the height adjust proportionally based on the width */
+}
+
+/* Media query for phones */
+@media (max-width: 767px) {
+  .background-video {
+    height: 200px; /* Set a specific height for phones */
+  }
+}
+
+.slick-next
+{
+    right: 0px !important;
 }
