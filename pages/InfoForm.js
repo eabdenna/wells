@@ -198,15 +198,22 @@ const VehicleInformation = () => {
                 </div>
                 <div className="w-full md:w-1/2 px-4 mb-4">
                   <label htmlFor="accidentHistory" className="block text-gray-700 font-bold mb-2">Accident History</label>
-                  <input 
-                    type="text" 
+                  <select 
                     id="accidentHistory" 
                     name="accidentHistory" 
                     placeholder="Enter Accident History" 
                     value={accidentHistory} 
-                    className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black"
+                    className="form-select w-select border border-gray-300 rounded-md px-4 py-2 text-black"
                     onChange={(e) => setAccidentHistory(e.target.value)}
-                  />
+                    >
+                    <option value="">Select Accident History</option>
+                    <option value="No Previous Accidents">No Previous Accidents</option>
+                    <option value="Minor Damage">Minor Damage</option>
+                    <option value="Accident History">Accident History</option>
+                    <option value="Previous Airbag Deployed (repaired)">Previous Airbag Deployed</option>
+
+                    </select>
+                
                 </div>
                 <div className="w-full md:w-1/2 px-4 mb-4">
                   <label htmlFor="vehicleCondition" className="block text-gray-700 font-bold mb-2">Vehicle Condition</label>
