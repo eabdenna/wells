@@ -57,8 +57,8 @@ const RegisterForm = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 ">
-      <div className="max-w-xl mx-auto ">
+    <div className="container mx-auto px-4 py-8">
+      <div className="max-w-xl mx-auto">
         <div className="bg-white rounded shadow-lg">
           <div className="px-8 py-6">
             <form onSubmit={handleSubmit} noValidate id="vin-form" data-gtm-form-interact-id="0">
@@ -92,7 +92,7 @@ const RegisterForm = () => {
                       name="plateNumber" 
                       placeholder="Plate Number" 
                       value={plateNumber} 
-                      className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black" // Added text-black class
+                      className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black"
                       aria-required="true" 
                       aria-invalid="false" 
                       onChange={(e) => setPlateNumber(e.target.value)}
@@ -126,7 +126,7 @@ const RegisterForm = () => {
                     placeholder="Enter 17 digit VIN" 
                     value={vin} 
                     maxLength="17" 
-                    className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black" // Added text-black class
+                    className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black"
                     aria-required="true" 
                     aria-invalid="false" 
                     onChange={(e) => setVin(e.target.value)}
@@ -142,7 +142,7 @@ const RegisterForm = () => {
                     id="miles" 
                     name="miles" 
                     value={miles} 
-                    className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black" // Added text-black class
+                    className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black"
                     placeholder="Enter Miles"
                     aria-required="true" 
                     aria-invalid="false" 
@@ -157,7 +157,7 @@ const RegisterForm = () => {
                     name="zip" 
                     value={zip} 
                     maxLength="5" 
-                    className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black" // Added text-black class
+                    className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black"
                     placeholder="Enter Zip"
                     aria-required="true" 
                     aria-invalid="false" 

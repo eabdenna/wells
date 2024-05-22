@@ -210,15 +210,20 @@ const VehicleInformation = () => {
                 </div>
                 <div className="w-full md:w-1/2 px-4 mb-4">
                   <label htmlFor="vehicleCondition" className="block text-gray-700 font-bold mb-2">Vehicle Condition</label>
-                  <input 
-                    type="text" 
+                  <select 
                     id="vehicleCondition" 
                     name="vehicleCondition" 
-                    placeholder="Enter Vehicle Condition" 
                     value={vehicleCondition} 
-                    className="form-input w-full border border-gray-300 rounded-md px-4 py-2 text-black"
+                    className="form-select w-full border border-gray-300 rounded-md px-4 py-2 text-black"
                     onChange={(e) => setVehicleCondition(e.target.value)}
-                  />
+                  >
+                    <option value="">Select Condition</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Below Average">Below Average</option>
+                    <option value="Horrible">Horrible</option>
+                  </select>
                 </div>
                 <div className="w-full md:w-1/2 px-4 mb-4">
                   <label htmlFor="payoff" className="block text-gray-700 font-bold mb-2">Payoff Information</label>
