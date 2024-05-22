@@ -20,7 +20,7 @@ const RegisterForm = () => {
     // Check if plate number and VIN are empty
     if (!plateNumber && !vin) {
       // Redirect to the YearMakeForm page without changing the URL
-      router.push({ pathname: '/year-make-form' }, undefined, { shallow: true });
+      router.push({ pathname: '/InfoForm' }, undefined, { shallow: true });
     } else {
       // Construct query parameters
       const queryParams = {
@@ -169,7 +169,7 @@ const RegisterForm = () => {
                 Submit
               </button>
               <p className="mt-4 text-center">
-                <a href="/year-make-form" className="text-blue-500" onClick={(e) => { e.preventDefault(); handleSubmit(e); }}>Submit without plate or vin</a>
+                <a href="/InfoForm" className="text-blue-500" onClick={(e) => { e.preventDefault(); handleSubmit(e); }}>Submit without plate or vin</a>
               </p>
             </form>
           </div>
